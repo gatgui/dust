@@ -15,3 +15,9 @@
 ehthumbs.db
 Thumbs.db
 release/*
+
+/release
+/debug
+/.build
+/*.dblite
+/excons.cache

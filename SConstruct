@@ -1,10 +1,14 @@
+import sys
 import excons
 from excons.tools import arnold
 
 env = excons.MakeBaseEnv()
 
+if sys.platform != "win32":
+   env.Append(CPPFLAGS=" -Wno-unused-parameter")
+
 prjs = [
-   {  "name": "dust",
+   {  "name": "dusty",
       "prefix": "arnold",
       "type": "dynamicmodule",
       "ext": arnold.PluginExt(),

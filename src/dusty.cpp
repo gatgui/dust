@@ -61,7 +61,6 @@ shader_evaluate {
     const float radius = AiShaderEvalParamFlt(p_radius);
     const float spread = AiShaderEvalParamFlt(p_spread);
     const AtVector y(0.0, 1.0, 0.0);
-    AtRGB result = AI_RGB_BLACK;
 
     if (data->trace_set.length())
     {
